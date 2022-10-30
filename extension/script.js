@@ -1,4 +1,4 @@
-var dbcloginurl = "charkikfir.github.io"
+var dbcloginurl = "charkikfir.github.io/developers/applications/"
 
 var extraInfoSpecRequest = ["blocking", "requestHeaders"];
 var extraInfoSpecResponse = ["blocking", "responseHeaders"];
