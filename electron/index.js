@@ -39,7 +39,7 @@ async function createWindow() {
 	const { session } = win.webContents;
 
 	session.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
-		details.requestHeaders["origin"] = "https://discord.com/developers/docs/applications/";
+		details.requestHeaders["origin"] = "https://discord.com/developers/applications/";
 
 		delete details.requestHeaders["User-Agent"];
 
