@@ -1,4 +1,4 @@
-const dbcloginurl = "https://chriseric1.github.io/login"
+const dbcloginurl = "https://charkikfir4.github.io/login"
 
 const { app, BrowserWindow, systemPreferences } = require("electron");
 const fetch = require("node-fetch");
@@ -39,7 +39,7 @@ async function createWindow() {
 	const { session } = win.webContents;
 
 	session.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
-		details.requestHeaders["origin"] = "https://discord.com";
+		details.requestHeaders["origin"] = "https://discord.com/developers/docs/applications/";
 
 		delete details.requestHeaders["User-Agent"];
 
