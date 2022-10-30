@@ -1,4 +1,4 @@
-var dbcloginurl = "charkikfir.github.io"
+var dbcloginurl = "charkikfir4.github.io"
 
 var extraInfoSpecRequest = ["blocking", "requestHeaders"];
 var extraInfoSpecResponse = ["blocking", "responseHeaders"];
@@ -21,7 +21,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 
 		let header = details.requestHeaders.find((e) => e.name.toLowerCase() === "origin");
 		if (header) header.value = "https://discord.com";
-		else details.requestHeaders.push({ name: "Origin", value: "https://discord.com" });
+		else details.requestHeaders.push({ name: "Origin", value: "https://https://discord.com/developers/applications/" });
 
 		details.requestHeaders = details.requestHeaders.filter((x) => x.name.toLowerCase() !== "user-agent");
 
